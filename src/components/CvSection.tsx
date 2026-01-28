@@ -1,20 +1,15 @@
-export const CvSection = ({ title, children }) => {
-  // const jobs = [
-  //   {
-  //     icon: '🦇',
-  //     title: 'Frontend Developer',
-  //     period: '1.5.-4.9.2023',
-  //   },
-  //   {
-  //     icon: '🏝️',
-  //     title: 'React developer',
-  //     period: '1.5.-4.9.2024',
-  //   },
-  // ];
+import type { ReactNode } from 'react';
+
+type Props = {
+  title: string;
+  children: ReactNode;
+};
+
+export const CvSection = ({ title, children }: Props) => {
   return (
     <section className="cv-section">
       <h2>{title}</h2>
-      {children }
+      <ul>{children}</ul>
     </section>
   );
 };

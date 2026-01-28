@@ -1,16 +1,16 @@
 export const SkillSection = () => {
-  // const jobs = [
-  //   {
-  //     icon: '🦇',
-  //     title: 'Frontend Developer',
-  //     period: '1.5.-4.9.2023',
-  //   },
-  //   {
-  //     icon: '🏝️',
-  //     title: 'React developer',
-  //     period: '1.5.-4.9.2024',
-  //   },
-  // ];
+  const jobs = [
+    {
+      icon: '🦇',
+      title: 'Frontend Developer',
+      period: '1.5.-4.9.2023',
+    },
+    {
+      icon: '🏝️',
+      title: 'React developer',
+      period: '1.5.-4.9.2024',
+    },
+  ];
   return (
     <section className="cv-section">
       <h2>Pracovní zkušenosti</h2>
