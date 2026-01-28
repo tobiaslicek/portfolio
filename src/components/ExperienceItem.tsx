@@ -1,3 +1,9 @@
+type Props = {
+  icon: string;
+  title: string;
+  period: string;
+};
+
 export const ExperienceItem = ({ icon, title, period }: Props) => {
   return (
     <li className="work-item">
