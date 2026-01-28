@@ -9,24 +9,30 @@ function App() {
     {
       icon: '🦇',
       title: 'Frontend Developer',
-      period: '1.5.-4.9.2023',
+      period: '1.5.–4.9.2023',
     },
     {
       icon: '🏝️',
       title: 'React developer',
-      period: '1.5.-4.9.2024',
+      period: '1.5.–4.9.2024',
     },
   ];
 
   return (
     <main className="cv">
       <Header />
-      {/* <WorkSection /> */}
-      {/* <SkillSection /> */}
-      {jobs.map((experience) => {
-        return <ExperienceItem />;
-      })}
-      <CvSection title="Pracovní zkušenosti"></CvSection>
+
+      <CvSection title="Pracovní zkušenosti">
+        {jobs.map((job) => (
+          <ExperienceItem
+            key={job.title}
+            title={job.title}
+            icon={job.icon}
+            period={job.period}
+          />
+        ))}
+      </CvSection>
+
       <Footer />
     </main>
   );
